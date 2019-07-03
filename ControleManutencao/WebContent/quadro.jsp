@@ -55,6 +55,7 @@
       
       for (Quadro p : quadro.getLista()) {
     	out.print("<tr onclick='prepararEditar("+p.getCod()+")'>");
+    	////////////////////////////////////////////////////////////
     	//out.print("<td>"+p.getCod()+"</td>");
     	out.print("<td>"+ p.getDescricao()+"</td>");
     	out.print("<td class='"+p.getStatus()+"'>" + p.getStatus()+"</td>");

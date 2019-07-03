@@ -37,8 +37,6 @@ public class ServletQuadro extends HttpServlet {
         obj.setDtInicio(dtInicio);
         obj.setDtFim(dtFim);
 
-		obj.inserir();
-
 		PrintWriter saida = response.getWriter();
 		int cod = 0;
 		

@@ -66,14 +66,6 @@ public class Quadro {
 		this.status = status;
 	}
 
-	public String getLocal() {
-		return local;
-	}
-
-
-	public void setLocal(String local) {
-		this.local = local;
-	}
 
 	public String getObservacao() {
 		return observ;
@@ -84,6 +76,13 @@ public class Quadro {
 		this.observ = observ;
 	}
 	
+	public String getLocal() {
+		return local;
+	}
+
+	public void setLocal(String local) {
+		this.local = local;
+	}
 	
 	
 	public String getResponsavel() {
@@ -205,8 +204,8 @@ public class Quadro {
 						conexao.prepareStatement(sql);
 				prepararSQL.setString(1, descricao);
 				prepararSQL.setString(2, status);
-				prepararSQL.setString(4, observ);
-				prepararSQL.setString(3, local);
+				prepararSQL.setString(3, observ);
+				prepararSQL.setString(4, local);
 				prepararSQL.setString(5, responsavel);
 				prepararSQL.setString(6, dtInicio);
 				prepararSQL.setString(7, dtFim);
@@ -237,7 +236,7 @@ public class Quadro {
 				p.setCod(rs.getInt("cod"));
 				p.setDescricao(rs.getString("descricao"));
 				p.setStatus(rs.getString("status"));
-				p.setLocal(rs.getString("observ"));
+				p.setObservacao(rs.getString("observ"));
 				p.setLocal(rs.getString("local"));
 				p.setResponsavel(rs.getString("responsavel"));
 				p.setDtInicio(rs.getString("dt_inicio"));
