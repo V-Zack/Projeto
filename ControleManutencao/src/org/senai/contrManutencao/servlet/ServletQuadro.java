@@ -21,8 +21,8 @@ public class ServletQuadro extends HttpServlet {
 		String codigo = request.getParameter("cod");
 		String descricao = request.getParameter("descricao");
 		String status = request.getParameter("status");
-		String local = request.getParameter("local");
 		String obs = request.getParameter("obs");
+		String local = request.getParameter("local");
 		String responsavel = request.getParameter("responsavel");
         String dtInicio = request.getParameter("dtInicio");
         String dtFim = request.getParameter("dtFim");
@@ -31,8 +31,8 @@ public class ServletQuadro extends HttpServlet {
 		Quadro obj = new Quadro();
 		obj.setDescricao(descricao);
 		obj.setStatus(status);
-		obj.setLocal(local);
 		obj.setObservacao(obs);
+		obj.setLocal(local);
 		obj.setResponsavel(responsavel);
         obj.setDtInicio(dtInicio);
         obj.setDtFim(dtFim);

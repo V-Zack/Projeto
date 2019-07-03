@@ -15,11 +15,12 @@ public class Quadro {
 	private int cod;
 	private String descricao;
 	private String status;
+	private String observ;
 	private String local;
 	private String responsavel;
 	private String dtInicio;
 	private String dtFim;
-	private String observ;
+	
 	
 	
 	
@@ -27,8 +28,8 @@ public class Quadro {
 		setCod(0);
 		setDescricao("");
 		setStatus("");
-		setLocal("");
 		setObservacao("");
+		setLocal("");
 		setResponsavel("");
 		setDtInicio("");
 		setDtFim("");
@@ -146,9 +147,9 @@ public class Quadro {
 		if(conexao != null) {
 			String sql = "update painel set " + 
 					"	descricao = ? ," + 
-					"	status        = ? ," + 
-					"	local        = ? ," + 
+					"	status        = ? ," +
 					"	observ        = ? ," + 
+					"	local        = ? ," + 
 					"	responsavel  = ? ," + 
 					"	dt_inicio  = ? ," + 
 					"	dt_fim   = ?," + 
@@ -158,8 +159,8 @@ public class Quadro {
 						conexao.prepareStatement(sql);
 				prepararSQL.setString(1, descricao);
 				prepararSQL.setString(2, status);
-				prepararSQL.setString(3, local);
 				prepararSQL.setString(4, observ);
+				prepararSQL.setString(3, local);
 				prepararSQL.setString(5, responsavel);
 				prepararSQL.setString(6, dtInicio);
 				prepararSQL.setString(7, dtFim);
@@ -184,9 +185,9 @@ public class Quadro {
 		if(conexao != null) {
 			String sql = "insert into quadro(" + 
 					"	descricao  ," + 
-					"	status      ," + 
-					"	local       ," + 
+					"	status      ," +
 					"	observ        ," + 
+					"	local       ," + 
 					"	responsavel   ," + 
 					"	dt_inicio   ," + 
 					"	dt_fim   " + 
@@ -204,8 +205,8 @@ public class Quadro {
 						conexao.prepareStatement(sql);
 				prepararSQL.setString(1, descricao);
 				prepararSQL.setString(2, status);
-				prepararSQL.setString(3, local);
 				prepararSQL.setString(4, observ);
+				prepararSQL.setString(3, local);
 				prepararSQL.setString(5, responsavel);
 				prepararSQL.setString(6, dtInicio);
 				prepararSQL.setString(7, dtFim);
@@ -236,8 +237,8 @@ public class Quadro {
 				p.setCod(rs.getInt("cod"));
 				p.setDescricao(rs.getString("descricao"));
 				p.setStatus(rs.getString("status"));
-				p.setLocal(rs.getString("local"));
 				p.setLocal(rs.getString("observ"));
+				p.setLocal(rs.getString("local"));
 				p.setResponsavel(rs.getString("responsavel"));
 				p.setDtInicio(rs.getString("dt_inicio"));
 				p.setDtFim(rs.getString("dt_fim"));
@@ -268,8 +269,8 @@ public class Quadro {
 				p.setCod(rs.getInt("cod"));
 				p.setDescricao(rs.getString("descricao"));
 				p.setStatus(rs.getString("status"));
-				p.setLocal(rs.getString("local"));
 				p.setLocal(rs.getString("observ"));
+				p.setLocal(rs.getString("local"));
 				p.setResponsavel(rs.getString("responsavel"));
 				p.setDtInicio(rs.getString("dt_inicio"));
 				p.setDtFim(rs.getString("dt_fim"));

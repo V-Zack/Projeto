@@ -17,11 +17,11 @@
 <div align="center"><img src="img/allia.jpg"
 	height="240" width="400"/>
 	<div align="center"/>
-	<a href="gerenciarQuadro.jsp">Abertura de Chamado</a>
+	<a href="gerenciarQuadro.jsp">Cadastrar Novo Chamado</a>
 	
 
 	
-	<h1>Controle de Serviço</h1>
+	<h1>Visualizar e Controlar Serviços</h1>
 </div>
             
   
@@ -32,6 +32,7 @@
      
         <th width="25%">Descrição do Serviço<p></th>
 		<th width="17%">Status<p></th>
+		<th width="17%">Obs:<p></th> 
 	    <th width="17%">Local<p></th> 
 		<th width="17%">Responsavel<p></th>
 		<th width="15%">Data Início<p></th>
@@ -57,8 +58,8 @@
     	//out.print("<td>"+p.getCod()+"</td>");
     	out.print("<td>"+ p.getDescricao()+"</td>");
     	out.print("<td class='"+p.getStatus()+"'>" + p.getStatus()+"</td>");
-    	out.print("<td>"+ p.getLocal()+"</td>");
     	out.print("<td>"+ p.getObservacao()+"</td>");
+    	out.print("<td>"+ p.getLocal()+"</td>");
     	out.print("<td>"+ p.getResponsavel()+"</td>");
     	out.print("<td>"+ p.getDtInicio()+"</td>");
     	out.print("<td>"+ p.getDtFim()+"</td>");

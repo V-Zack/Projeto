@@ -23,8 +23,8 @@
 		var dados = "";		
 		dados += "descricao="+document.getElementById("descricao").value;
 		dados += "&status="+document.getElementById("status").value;
-		dados += "&local="+document.getElementById("local").value;
 		dados += "&obs="+document.getElementById("obs").value;
+		dados += "&local="+document.getElementById("local").value;
 		dados += "&responsavel="+document.getElementById("responsavel").value;
 		dados += "&cod="+document.getElementById("cod").value;
 		dados += "&dtInicio="+document.getElementById("dtInicio").value;
@@ -106,9 +106,9 @@
 		<img src="img/allia.jpg" height="240" width="400" />
 		<p>
 		
-		<a href="quadro.jsp">Controle de Serviço</a>
+		<a href="quadro.jsp">Visualizar e Controlar Serviços</a>
 		
-		<h2 align="center">Abertura de Chamado</h2>
+		<h2 align="center">Cadastrar Novo Chamado</h2>
 		<form id="formulario">
 			<input type="hidden" value="<%out.print(quadro.getCod());%>" id="cod" />
 

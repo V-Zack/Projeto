@@ -11,10 +11,11 @@ create table quadro(
 cod 		   int primary key auto_increment,
 descricao  varchar(100),
 status         varchar(10),
+observ          varchar(150),
 local          varchar(20),
 responsavel   varchar(25),
-dt_inicio   varchar(8),
-dt_fim   varchar(8)
+dt_inicio   varchar(10),
+dt_fim   varchar(10)
 
 );
 show tables;
@@ -25,6 +26,7 @@ desc quadro;
 insert into quadro(
 	descricao   ,
 	status      ,
+	observ      ,
 	local       ,
 	responsavel ,
 	dt_inicio   ,
@@ -35,7 +37,8 @@ values ('Vazamento',
 		'Quarto 10',
 		'Andre',
 		'05/06/2019',
-		'06/06/2019'
+		'06/06/2019',
+		'observações'
 		);
 
 -- consulta no banco de dados
