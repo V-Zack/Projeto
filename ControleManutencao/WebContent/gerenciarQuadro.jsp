@@ -1,10 +1,10 @@
 <%@page import="org.senai.contrManutencao.modelo.Quadro"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="utf-8">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <script
@@ -67,7 +67,7 @@
 			       
 			       if(msg == "Gravado com sucesso"){
 			    	   document.getElementById("msg").className = "alert alert-info";
-			    	   document.getElementById("msg").innerHTML = "informação apagada";
+			    	   document.getElementById("msg").innerHTML = "informaÃ§Ã£o apagada";
 			    	   document.getElementById("formulario").reset();
 			    	   
 			       }else{
@@ -106,7 +106,7 @@
 		<img src="img/allia.jpg" height="240" width="400" />
 		<p>
 		
-		<a href="quadro.jsp">Visualizar e Controlar Serviços</a>
+		<a href="quadro.jsp">Visualizar e Controlar ServiÃ§os</a>
 		
 		<h2 align="center">Cadastrar Novo Chamado</h2>
 		<form id="formulario">
@@ -116,10 +116,10 @@
 			<div id="msg"></div>
 			<div class="form-row">
 				<div class="form-group col-md-6">
-					<label for="nome">Descrição do Serviço:</label> <input type="text"
+					<label for="nome">DescriÃ§Ã£o do ServiÃ§o:</label> <input type="text"
 						class="form-control" id="descricao"
 						value="<%out.print(quadro.getDescricao());%>"
-						placeholder="Descrição do Serviço" name="descricao">
+						placeholder="DescriÃ§Ã£o do ServiÃ§o" name="descricao">
 				</div>
 				<p>
 				<div class="form-group col-md-3">
@@ -128,7 +128,7 @@
 						<option>Agendado</option>
 						<option>Em andamento</option>
 						<option>Parado</option>
-						<option>Concluído</option>
+						<option>ConcluÃ­do</option>
 					</select>
 
 					<script>
@@ -139,9 +139,9 @@
 				</div>
 
 				<div class="form-group col-md-3">
-					<label for="obs">Observação:</label> <input type="text"
+					<label for="obs">ObservaÃ§Ã£o:</label> <input type="text"
 						class="form-control" value="<%out.print(quadro.getObservacao());%>"
-						id="obs" placeholder="Insira Observações">
+						id="obs" placeholder="Insira ObservaÃ§Ãµes">
 
 				</div>
 			</div>
@@ -159,14 +159,14 @@
 
 
 				<div class="form-group col-md-3">
-					<label for="responsavel">Responsável:</label> <input type="text"
+					<label for="responsavel">ResponsÃ¡vel:</label> <input type="text"
 						class="form-control"
 						value="<%out.print(quadro.getResponsavel());%>" id="responsavel">
 				</div>
 
 
 				<div class="form-group col-md-3">
-					<label for="local">Data Início :</label> <input type="date"
+					<label for="local">Data InÃ­cio :</label> <input type="date"
 						class="form-control" value="<%out.print(quadro.getDtInicio());%>"
 						id="dtInicio">
 				</div>

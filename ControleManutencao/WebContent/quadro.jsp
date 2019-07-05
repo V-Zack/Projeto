@@ -1,6 +1,6 @@
 <%@page import="org.senai.contrManutencao.modelo.Quadro"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<title>Controle de Manutenção</title>
+<title>Controle de ManutenÃ§Ã£o</title>
 </head>
 <body>
 <div class="container">
@@ -21,7 +21,7 @@
 	
 
 	
-	<h1>Visualizar e Controlar Serviços</h1>
+	<h1>Visualizar e Controlar ServiÃ§os</h1>
 </div>
             
   
@@ -30,12 +30,12 @@
     <thead>
       <tr>
      
-        <th width="25%">Descrição do Serviço<p></th>
+        <th width="25%">DescriÃ§Ã£o do ServiÃ§o<p></th>
 		<th width="17%">Status<p></th>
 		<th width="17%">Obs:<p></th> 
 	    <th width="17%">Local<p></th> 
 		<th width="17%">Responsavel<p></th>
-		<th width="15%">Data Início<p></th>
+		<th width="15%">Data InÃ­cio<p></th>
 		<th width="15%">Data Fim<p></th>
 		
       </tr>
