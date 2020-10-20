@@ -21,7 +21,7 @@
 	
 
 	
-	<h1>Visualizar e Controlar Serviços</h1>
+	<h2>Painel de Controle de Serviços</h2>
 </div>
             
   
@@ -48,6 +48,11 @@
      window.location.replace('gerenciarQuadro.jsp?cod='+cod);
       }
       
+      function novo(){			
+			window.location.replace('gerenciarQuadro.jsp');
+		}
+      
+      
       </script>
       
       <%
@@ -71,7 +76,8 @@
       %>
     </tbody>
   </table>
-
+            <button type="button" class="btn btn-secondary" onclick="novo()">Novo</button>
+			<button type="button" class="btn btn-primary" onclick="painel()">Painel</button>
 </div>
 </body>
 </html>

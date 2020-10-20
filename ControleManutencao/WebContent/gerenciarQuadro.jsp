@@ -88,6 +88,10 @@
 		function novo(){			
 			window.location.replace('gerenciarQuadro.jsp');
 		}
+		
+		 function painel(){			
+				window.location.replace('quadro.jsp');
+			}
 	</script>
 
 
@@ -106,7 +110,7 @@
 		<img src="img/allia.jpg" height="240" width="400" />
 		<p>
 		
-		<a href="quadro.jsp">Visualizar e Controlar Serviços</a>
+		
 		
 		<h2 align="center">Cadastrar Novo Chamado</h2>
 		<form id="formulario">
@@ -179,6 +183,7 @@
 			<button type="button" class="btn btn-secondary" onclick="novo()">Novo</button>
 			<button type="button" class="btn btn-primary" onclick="gravar()">Gravar</button>
 			<button type="button" class="btn btn-danger" onclick="apagar()">Apagar</button>
+	        <button type="button" class="btn btn-primary" onclick="painel()">Painel</button>
 		</form>
 	</div>
 
